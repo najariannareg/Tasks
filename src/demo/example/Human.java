@@ -1,4 +1,4 @@
-package deepclone;
+package demo.example;
 
 public interface Human {
 
