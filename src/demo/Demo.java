@@ -2,10 +2,10 @@ package demo;
 
 
 import deepclone.CopyUtils;
-import deepclone.Human;
-import deepclone.Man;
-import deepclone.TreeNode;
-import deepclone.Woman;
+import demo.example.Human;
+import demo.example.Man;
+import demo.example.TreeNode;
+import demo.example.Woman;
 
 import java.util.List;
 
@@ -13,10 +13,10 @@ public class Demo {
 
     public static void main(String[] args) {
 
-        Human parent = new Man("James", 109, null);
-        Human man = new Man("John", 71, List.of("Notes from Underground"));
-        Human child1 = new Man("Jack", 29, List.of("Crime & Punishment", "The Idiot"));
-        Human child2 = new Woman("Jane", 27, new String[]{"Titanic", "The Godfather"});
+        Human parent = new Man("James", 80, null);
+        Human man = new Man("John", 50, List.of("Notes from Underground"));
+        Human child1 = new Man("Jack", 30, List.of("Crime & Punishment", "The Idiot"));
+        Human child2 = new Woman("Jane", 25, new String[]{"Titanic", "The Godfather"});
 
         TreeNode<Human> root = new TreeNode<>(parent);
         TreeNode<Human> node1 = new TreeNode<>(man);

@@ -1,17 +1,17 @@
-package deepclone;
+package demo.example;
 
-import java.util.List;
+import java.util.Arrays;
 
-public class Man implements Human {
+public class Woman implements Human {
 
     private String name;
     private int age;
-    private List<String> favoriteBooks;
+    private String[] favoriteMovies;
 
-    public Man(String name, int age, List<String> favoriteBooks) {
+    public Woman(String name, int age, String[] favoriteMovies) {
         this.name = name;
         this.age = age;
-        this.favoriteBooks = favoriteBooks;
+        this.favoriteMovies = favoriteMovies;
     }
 
     @Override
@@ -31,20 +31,20 @@ public class Man implements Human {
         this.age = age;
     }
 
-    public List<String> getFavoriteBooks() {
-        return favoriteBooks;
+    public String[] getFavoriteMovies() {
+        return favoriteMovies;
     }
 
-    public void setFavoriteBooks(List<String> favoriteBooks) {
-        this.favoriteBooks = favoriteBooks;
+    public void setFavoriteMovies(String[] favoriteMovies) {
+        this.favoriteMovies = favoriteMovies;
     }
 
     @Override
     public String toString() {
-        return "Man{" +
+        return "Woman{" +
                 "name='" + getName() +
                 ", age=" + getAge() +
-                ", favoriteBooks=" + getFavoriteBooks() +
+                ", favoriteBooks=" + Arrays.toString(getFavoriteMovies()) +
                 '}';
     }
 }
